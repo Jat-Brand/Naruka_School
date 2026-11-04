@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Narka School</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b2a6b">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <style>
+    html, body { margin:0; height:100%; overflow:hidden; background:#0b2a6b; }
+    iframe {
+      position:absolute; left:0; top:-48px;
+      width:100%; height:calc(100% + 48px);
+      border:0;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://script.google.com/macros/s/AKfycbyHApxHarBp_rZJSm8SNp7zuqIfQ_f81HHMYvnnNrpr7BkXCJnqgrhF75ilp3_veC25/exec"
+          allow="camera; microphone; geolocation; clipboard-write"></iframe>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
